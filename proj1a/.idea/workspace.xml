@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32d40b4d-f7c4-4607-9932-80104c3d76d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/DebugExercise1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/DebugExercise2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/DebugExercise3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/IntList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/IntListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/foods.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/LinkedListDeque.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VSqYmfBhQ8QgOiOJKPATTHLGgF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32d40b4d-f7c4-4607-9932-80104c3d76d1" name="Default Changelist" comment="" />
+      <created>1577256893481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577256893481</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="445" y="0" key="CommitChangelistDialog2" timestamp="1577260589422">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="445" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1577260589422" />
+    <state x="242" y="48" key="DiffContextDialog" timestamp="1577260469395">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="242" y="48" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1577260469395" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1577260496060">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1577260496060" />
+    <state x="417" y="242" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577260577982">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="417" y="242" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1577260577982" />
+  </component>
+</project>
