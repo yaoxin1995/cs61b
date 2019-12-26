@@ -10,26 +10,45 @@
  * then remove 9,999 items, the resulting size should be more
  * like a deque with 1 item than 10,000. Do not maintain references
  * to items that are no longer in the deque.*/
-class LinkedListDeque <T> {
+public class LinkedListDeque <BleepBlorp> {
 
     private int size;
-    private IntNode sentinel;
+    private StaffNode sentinel; //the first item if existe is sentinel.next
 
-    public class IntNode{
-        public T item;
-        public IntNode next;
-        public IntNode prev;
-        public IntNode(T item,IntNode nnext,IntNode pprev){
+
+
+
+    /**
+     * the node
+     ***/
+     class StaffNode{
+        public BleepBlorp item;
+        public StaffNode next;
+        public StaffNode prev;
+        StaffNode(BleepBlorp item,StaffNode nnext,StaffNode pprev){
             this.item= item;
             next=nnext;
             prev=pprev;
         }
+
+
     }
 
 
+    /**
+     * empty list
+     **/
     public LinkedListDeque(){
 
+        sentinel =new StaffNode(null,null,null);
+        sentinel.next=sentinel;
+        sentinel.prev=sentinel;
+        size=0;
     }
+    /**
+     *
+     * */
+
 
     public LinkedListDeque(LinkedListDeque other){
 
@@ -37,14 +56,21 @@ class LinkedListDeque <T> {
 
 
     /**add an item of type T to the front of the deque */
-    public void adddFirst(T item){
-
+    public void adddFirst(BleepBlorp item){
+        StaffNode Node =new StaffNode(item,sentinel.next,sentinel);
+        sentinel.next.prev=Node;
+        sentinel.next=Node;
+        size++;
     }
 
     /**
      * add an item of type T to the back of the deque
      * */
-    public void addLast(T item){
+    public void addLast(BleepBlorp item){
+        StaffNode Node=new StaffNode(item,sentinel,sentinel.prev);
+        sentinel.prev.next=Node;
+        sentinel.prev=Node;
+        size++;
 
     }
 
@@ -53,8 +79,10 @@ class LinkedListDeque <T> {
      * */
 
     public boolean isEmptu(){
-
-        return  true;
+        if(size==0)
+            return true;
+        else
+            return false;
 
     }
 
@@ -62,7 +90,7 @@ class LinkedListDeque <T> {
      * return the number of the items in the deque
      * */
     public int size(){
-        return 0;
+        return size;
     }
 
     /**
@@ -70,6 +98,12 @@ class LinkedListDeque <T> {
      * by a spave,once all items habe been print out a new line
      * */
     public void printDeque(){
+        StaffNode P=sentinel;
+        for(int i=0;i<size;i++){
+            System.out.print(P.item.toString()+" ");
+            P=P.next;
+        }
+        System.out.println();
 
     }
 
@@ -77,15 +111,32 @@ class LinkedListDeque <T> {
      * removes and returns the item at the front of the deque
      * if no such item exists ,return null
      * */
-    public T removefirst(){
-        return null;
+    public BleepBlorp removefirst(){
+        if(size==0)
+            return  null;
+
+        sentinel.next=sentinel.next.next;
+        sentinel.next.prev=sentinel;
+        size--;
+        if(size==0)
+            return  null;
+        else
+            return  sentinel.next.item;
     }
 
     /**
      * removes and returns the item at the back of the deque
      * if no such item exists return null*/
-    public T removeLast(){
-        return null;
+    public BleepBlorp removeLast(){
+        if(size==0)
+            return  null;
+        sentinel.prev=sentinel.prev.prev;
+        sentinel.prev.next=sentinel;
+        size--;
+        if(size==0)
+            return null;
+        else
+            return  sentinel.prev.item;
     }
 
     /**
@@ -93,12 +144,29 @@ class LinkedListDeque <T> {
      * where 0 is the front,1 is the next item,an so forth
      * if no such item exists ,returns null. must not alter the deque
      * */
-    public T get(int index){
-        return null;
+    public BleepBlorp get(int index){
+        if(size==0)
+            return  null;
+        StaffNode p= sentinel.next;
+        for(int i=0;i<index;i++){
+            p=p.next;
+        }
+        return p.item;
     }
 
-    public T getTecursive(int index){
-        return null;
+
+    public BleepBlorp getTecursive(int index){
+        if(size==0)
+            return null;
+
+    }
+
+    private  BleepBlorp getTecursiveHelp(int Index,StaffNode curr){
+        if(Index==0)
+            return  curr.item;
+        else{
+            return getTecursiveHelp(Index--,curr.next);
+        }
     }
 
 }
