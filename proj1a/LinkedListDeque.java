@@ -21,7 +21,7 @@ public class LinkedListDeque <BleepBlorp> {
     /**
      * the node
      ***/
-     class StaffNode{
+    class StaffNode{
         public BleepBlorp item;
         public StaffNode next;
         public StaffNode prev;
@@ -51,6 +51,14 @@ public class LinkedListDeque <BleepBlorp> {
 
 
     public LinkedListDeque(LinkedListDeque other){
+        sentinel =new StaffNode(null,null,null);
+        sentinel.next=sentinel;
+        sentinel.prev=sentinel;
+        size=0;
+
+        for(int i=0;i<other.size();i++){
+            addLast((BleepBlorp)other.get(i));
+        }
 
     }
 
@@ -158,6 +166,7 @@ public class LinkedListDeque <BleepBlorp> {
     public BleepBlorp getTecursive(int index){
         if(size==0)
             return null;
+        return getTecursiveHelp(index,sentinel.next);
 
     }
 
