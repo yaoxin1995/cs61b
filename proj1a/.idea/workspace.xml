@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d40b4d-f7c4-4607-9932-80104c3d76d1" name="Default Changelist" comment="complete the List and delete the not right class">
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/lab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/DebugExercise1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/DebugExercise2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/DebugExercise3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/IntList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/IntListTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/out/production/lab2/foods.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
+    <list default="true" id="32d40b4d-f7c4-4607-9932-80104c3d76d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDequeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab3" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -98,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577423441660</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="build the klette of the Array">
+      <created>1577435069713</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577435069713</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -113,37 +111,78 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="complete the List and delete the not right class" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete the List and delete the not right class" />
+    <MESSAGE value="build the klette of the Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="build the klette of the Array" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="34" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577423047309">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="309" y="34" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1577423047309" />
-    <state x="445" y="0" key="CommitChangelistDialog2" timestamp="1577423440578">
+    <state x="445" y="0" key="CommitChangelistDialog2" timestamp="1577435068562">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="445" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1577423440578" />
+    <state x="445" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1577435068562" />
     <state x="242" y="48" key="DiffContextDialog" timestamp="1577260469395">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="242" y="48" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1577260469395" />
-    <state width="1231" height="155" key="GridCell.Tab.0.bottom" timestamp="1577423414067">
+    <state x="371" y="6" key="FileChooserDialogImpl" timestamp="1579814679302">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1231" height="155" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1577423414067" />
-    <state width="1231" height="155" key="GridCell.Tab.0.center" timestamp="1577423414067">
+    <state x="371" y="6" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1579814679302" />
+    <state width="1227" height="155" key="GridCell.Tab.0.bottom" timestamp="1577618321267">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1231" height="155" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1577423414067" />
-    <state width="1231" height="155" key="GridCell.Tab.0.left" timestamp="1577423414067">
+    <state width="1227" height="155" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1577618321267" />
+    <state width="1227" height="155" key="GridCell.Tab.0.center" timestamp="1577618321267">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1231" height="155" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1577423414067" />
-    <state width="1231" height="155" key="GridCell.Tab.0.right" timestamp="1577423414067">
+    <state width="1227" height="155" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1577618321267" />
+    <state width="1227" height="155" key="GridCell.Tab.0.left" timestamp="1577618321267">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1231" height="155" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1577423414067" />
+    <state width="1227" height="155" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1577618321267" />
+    <state width="1227" height="155" key="GridCell.Tab.0.right" timestamp="1577618321267">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1227" height="155" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1577618321267" />
+    <state width="1231" height="3" key="GridCell.Tab.1.bottom" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.1.center" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.1.left" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.1.right" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.2.bottom" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.2.center" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.2.left" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state width="1231" height="3" key="GridCell.Tab.2.right" timestamp="1577567250321">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1231" height="3" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1577567250321" />
+    <state x="242" y="0" key="NewModule_or_Project.wizard" timestamp="1579555993990">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="242" y="0" key="NewModule_or_Project.wizard/0.0.1280.689@0.0.1280.689" timestamp="1579555993990" />
     <state x="431" y="1" key="RollbackChangesDialog" timestamp="1577422732771">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -152,9 +191,31 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1577260496060" />
+    <state x="272" y="127" key="com.intellij.ide.util.TipDialog" timestamp="1579555927349">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="272" y="127" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1579555927349" />
     <state x="417" y="242" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577433185540">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="417" y="242" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1577433185540" />
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1577521756334">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1577521756334" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/LinkedListDequeTest.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/proj1a$LinkedListDequeTest.ic" NAME="LinkedListDequeTest Coverage Results" MODIFIED="1577566383281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -64,7 +64,7 @@ public class LinkedListDeque <BleepBlorp> {
 
 
     /**add an item of type T to the front of the deque */
-    public void adddFirst(BleepBlorp item){
+    public void addFirst(BleepBlorp item){
         StaffNode Node =new StaffNode(item,sentinel.next,sentinel);
         sentinel.next.prev=Node;
         sentinel.next=Node;
@@ -86,7 +86,7 @@ public class LinkedListDeque <BleepBlorp> {
      * Return ture if deque is empty
      * */
 
-    public boolean isEmptu(){
+    public boolean isEmpty(){
         if(size==0)
             return true;
         else
@@ -98,6 +98,7 @@ public class LinkedListDeque <BleepBlorp> {
      * return the number of the items in the deque
      * */
     public int size(){
+
         return size;
     }
 
@@ -106,7 +107,7 @@ public class LinkedListDeque <BleepBlorp> {
      * by a spave,once all items habe been print out a new line
      * */
     public void printDeque(){
-        StaffNode P=sentinel;
+        StaffNode P=sentinel.next;
         for(int i=0;i<size;i++){
             System.out.print(P.item.toString()+" ");
             P=P.next;
@@ -119,7 +120,7 @@ public class LinkedListDeque <BleepBlorp> {
      * removes and returns the item at the front of the deque
      * if no such item exists ,return null
      * */
-    public BleepBlorp removefirst(){
+    public BleepBlorp removeFirst(){
         if(size==0)
             return  null;
 
