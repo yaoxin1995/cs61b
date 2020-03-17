@@ -33,9 +33,15 @@ public class TestPlip {
     @Test
     public void testReplicate() {
         // TODO
+        Plip p=new Plip(2);
+        Plip m=p.replicate();
+
+        assertNotEquals(p,m); // Asserts that two objects do not refer to the same object.
+        assertEquals(1, m.energy(),0.01);
+
     }
 
-    //@Test
+    @Test
     public void testChoose() {
 
         // No empty adjacent spaces; stay.

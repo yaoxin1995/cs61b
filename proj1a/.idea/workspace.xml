@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d40b4d-f7c4-4607-9932-80104c3d76d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDequeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="32d40b4d-f7c4-4607-9932-80104c3d76d1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -109,6 +104,42 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/java/lab1-checkoff/Git_cs61b/proj1a" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="complete the List and delete the not right class" />
     <MESSAGE value="build the klette of the Array" />
@@ -123,10 +154,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="445" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1577435068562" />
-    <state x="242" y="48" key="DiffContextDialog" timestamp="1577260469395">
+    <state x="242" y="48" width="1024" height="585" key="DiffContextDialog" timestamp="1584002799137">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="242" y="48" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1577260469395" />
+    <state x="242" y="48" width="1024" height="585" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1584002799137" />
     <state x="371" y="6" key="FileChooserDialogImpl" timestamp="1579814679302">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

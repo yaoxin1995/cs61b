@@ -6,9 +6,11 @@ import huglife.Action;
 import huglife.Occupant;
 
 import java.awt.Color;
+import java.nio.channels.Pipe;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * An implementation of a motile pacifist photosynthesizer.
@@ -29,6 +31,11 @@ public class Plip extends Creature {
      * blue color.
      */
     private int b;
+
+    /**
+     * probability of taking a move when ample space available.
+     */
+    private double moveProbability=0.5;
 
     /**
      * creates plip with energy equal to E.
@@ -58,7 +65,8 @@ public class Plip extends Creature {
      */
     public Color color() {
         g = 63;
-        return color(r, g, b);
+        return  color(99,(int)(96*energy+63),76);
+        //return color(r, g, b);
     }
 
     /**
@@ -75,6 +83,9 @@ public class Plip extends Creature {
      */
     public void move() {
         // TODO
+        energy=energy-0.15;
+        if(energy<0)
+            energy=0;
     }
 
 
@@ -83,6 +94,10 @@ public class Plip extends Creature {
      */
     public void stay() {
         // TODO
+
+        energy=energy+0.2;
+        if(energy>2)
+            energy=2;
     }
 
     /**
@@ -91,7 +106,9 @@ public class Plip extends Creature {
      * Plip.
      */
     public Plip replicate() {
-        return this;
+        Plip m=new Plip(energy*0.5);
+        this.energy=energy*0.5;
+        return m;
     }
 
     /**
@@ -110,21 +127,44 @@ public class Plip extends Creature {
     public Action chooseAction(Map<Direction, Occupant> neighbors) {
         // Rule 1
         Deque<Direction> emptyNeighbors = new ArrayDeque<>();
+        Deque<Direction> impossibleNeighbors=new ArrayDeque();
+        Deque<Direction> clorusNeighbors=new ArrayDeque();
         boolean anyClorus = false;
         // TODO
         // (Google: Enhanced for-loop over keys of NEIGHBORS?)
-        // for () {...}
+         for (Direction key: neighbors.keySet()) {
+             if(neighbors.get(key).name().equals("empty"))
+                 emptyNeighbors.add(key);
+             else if(neighbors.get(key).name().equals("impassible"))
+                 impossibleNeighbors.add(key);
+             else{
+                 anyClorus=true;
+                 clorusNeighbors.add(key);
+             }
+         }
 
-        if (false) { // FIXME
-            // TODO
+        if (emptyNeighbors.size()==0) { // FIXME
+            return new Action(Action.ActionType.STAY);
         }
+        else if(energy>=1){
+            return  new Action(Action.ActionType.REPLICATE,randomEntry(emptyNeighbors));
+        }
+        else if(anyClorus&&Math.random()<moveProbability)
+            return  new Action(Action.ActionType.MOVE,randomEntry(emptyNeighbors));
+        else
+            return new Action(Action.ActionType.STAY);
+    }
 
-        // Rule 2
-        // HINT: randomEntry(emptyNeighbors)
+    private Direction randomEntry(Deque<Direction> emptyNeighbors){
+        Random randomGenerator = new Random();
+        int index = randomGenerator.nextInt(emptyNeighbors.size());
+        Object[] direction=emptyNeighbors.toArray();
+        Direction pickDirection=(Direction) direction[index];
+        return pickDirection;
+    }
 
-        // Rule 3
-
-        // Rule 4
-        return new Action(Action.ActionType.STAY);
+    @Override
+    public String name(){
+        return "plip";
     }
 }
