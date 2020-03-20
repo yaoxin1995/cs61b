@@ -23,7 +23,7 @@ public class UnionFind {
     /* Returns the size of the set v1 belongs to. */
     public int sizeOf(int v1) {
         int index=find(v1);
-        return abc[index];
+        return Math.abs(abc[index]);
     }
 
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
