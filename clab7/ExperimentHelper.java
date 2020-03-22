@@ -15,7 +15,8 @@ public class ExperimentHelper {
      *  N = 8, OIPL: 13
      */
     public static int optimalIPL(int N) {
-        return 0;
+        int result=(int)(N*optimalAverageDepth(N));
+        return result;
     }
 
     /** Returns the average depth for nodes in an optimal BST of
@@ -27,6 +28,43 @@ public class ExperimentHelper {
      * @return
      */
     public static double optimalAverageDepth(int N) {
-        return 0;
+        int height=log2(N);
+        int nodeInDepthst=N;
+        double optimalAverageDepth=0;
+        for(double i=0.0;i<=height-1;i++){
+            nodeInDepthst-=(int)Math.pow(2.0,i);
+            optimalAverageDepth+=(int)Math.pow(2.0,i)*i;
+        }
+        optimalAverageDepth+=nodeInDepthst*height;
+        return (optimalAverageDepth)/N;
+
+
     }
+
+
+    /**
+     * The Math.floor() function returns the largest integer less than or equal to a given number.
+     * */
+    public static final int log2(int f)
+    {
+        return (int)Math.floor(Math.log(f)/Math.log(2.0));
+    }
+
+    public static void getInt(BST<Integer> T){
+        int temp = RandomGenerator.getRandomInt(10000);
+        while(true){
+            if(!T.contains(temp)){
+                T.add(temp);
+                break;
+            }else{
+                temp = RandomGenerator.getRandomInt(10000);
+            }
+        }
+    }
+
+    public static void deleteRandom(BST<Integer> test){
+        int randomKey=test.getRandomKey();
+        test.deleteTakingSuccessor(randomKey);
+    }
+
 }

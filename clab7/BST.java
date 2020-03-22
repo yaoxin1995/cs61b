@@ -246,4 +246,15 @@ public class BST<Key extends Comparable<Key>> {
     private boolean isEmpty() {
         return size() == 0;
     }
+
+    public double averageTreeHeight(){
+        return averageTreeDepth(root,0)/size();
+    }
+
+
+    private int averageTreeDepth(Node node,int depth){
+        if(node==null)
+            return 0;
+        return depth+averageTreeDepth(node.left,depth+1)+averageTreeDepth(node.right,depth+1);
+    }
 }
