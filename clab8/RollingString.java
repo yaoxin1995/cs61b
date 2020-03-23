@@ -3,7 +3,8 @@
  * in constant time and have a constant-time hash function. Used for the Rabin-Karp
  * string-matching algorithm.
  */
-class RollingString{
+class
+RollingString{
 
     /**
      * Number of total possible int values a character can take on.
