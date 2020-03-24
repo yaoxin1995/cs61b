@@ -1,3 +1,8 @@
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
+
 /**
  * A String-like class that allows users to add and remove characters in the String
  * in constant time and have a constant-time hash function. Used for the Rabin-Karp
@@ -18,6 +23,16 @@ RollingString{
      */
     static final int PRIMEBASE = 6113;
 
+    private StringBuilder rollingString;
+
+    private String currentString;
+
+    private int length;
+
+    private  long cachedHashValue;
+
+    private int preFirstChar;
+
     /**
      * Initializes a RollingString with a current value of String s.
      * s must be the same length as the maximum length.
@@ -25,6 +40,14 @@ RollingString{
     public RollingString(String s, int length) {
         assert(s.length() == length);
         /* FIX ME */
+        this.length=length;
+        rollingString=new StringBuilder(s);
+        currentString=s;
+
+        for(int i=0;i<length;i++){
+            cachedHashValue+=(int)(rollingString.charAt(i)*Math.pow(UNIQUECHARS,length-1-i));
+        }
+
     }
 
     /**
@@ -34,7 +57,14 @@ RollingString{
      */
     public void addChar(char c) {
         /* FIX ME */
+        rollingString.insert(length,c);
+        preFirstChar=rollingString.charAt(0);
+        rollingString.deleteCharAt(0);
+        cachedHashValue-=preFirstChar*Math.pow(UNIQUECHARS,length-1);
+        cachedHashValue=cachedHashValue*UNIQUECHARS;
+        cachedHashValue+=c;
     }
+
 
 
     /**
@@ -43,9 +73,9 @@ RollingString{
      * the string.
      */
     public String toString() {
-        StringBuilder strb = new StringBuilder();
-        /* FIX ME */
-        return "";
+        //StringBuilder strb = new StringBuilder();
+
+        return rollingString.toString();
     }
 
     /**
@@ -54,7 +84,7 @@ RollingString{
      */
     public int length() {
         /* FIX ME */
-        return -1;
+        return rollingString.length();
     }
 
 
@@ -66,16 +96,60 @@ RollingString{
     @Override
     public boolean equals(Object o) {
         /* FIX ME */
-        return false;
+        if(o==null)
+            return false;
+        if(this.getClass()!=o.getClass())
+            return false;
+        if(this==o)
+            return true;
+        RollingString test=(RollingString)o;
+        if(this.length()!=test.length())
+            return false;
+        for(int i=0;i<this.length;i++){
+            if(this.rollingString.charAt(i)!=test.rollingString.charAt(i))
+                return false;
+        }
+        return true;
     }
 
     /**
      * Returns the hashcode of the stored "string".
      * Should take constant time.
      */
+
+    /* **
+
     @Override
+
     public int hashCode() {
-        /* FIX ME */
-        return -1;
+
+
+
+        int h=cachedHashValue;
+        if(h==0&&rollingString.length()>0){
+            for(int i=0;i<length();i++){
+                h=(int)(rollingString.charAt(i)*Math.pow(UNIQUECHARS,length-1-i));
+            }
+            h=h%PRIMEBASE;
+        }
+        else if(h!=0){
+            int temp=h;
+            h=temp-getfirstHach()+rollingString.charAt(length-1)%PRIMEBASE;
+        }
+        cachedHashValue=h;
+        return h;
+    }
+
+    private int getfirstHach(){
+        int b=Math.floorMod((int)(preFirstChar*Math.pow(UNIQUECHARS,length()-1)), PRIMEBASE);
+        int a=(int)((preFirstChar*Math.pow(UNIQUECHARS,length()-1))%PRIMEBASE);
+        return b;
+    }
+    **/
+
+    @Override
+
+    public int hashCode() {
+        return  (int)(cachedHashValue%PRIMEBASE);
     }
 }
