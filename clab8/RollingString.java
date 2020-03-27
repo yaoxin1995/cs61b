@@ -29,6 +29,7 @@ RollingString{
 
     private int length;
 
+
     private  long cachedHashValue;
 
     private int preFirstChar;
@@ -43,6 +44,7 @@ RollingString{
         this.length=length;
         rollingString=new StringBuilder(s);
         currentString=s;
+
 
         for(int i=0;i<length;i++){
             cachedHashValue+=(int)(rollingString.charAt(i)*Math.pow(UNIQUECHARS,length-1-i));
