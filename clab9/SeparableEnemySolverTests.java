@@ -23,6 +23,7 @@ public class SeparableEnemySolverTests {
         g.connect("A", "B");
         g.connect("C", "D");
         SeparableEnemySolver solver = new SeparableEnemySolver(g);
+        solver.isSeparable();
         assertEquals(true, solver.isSeparable());
     }
 

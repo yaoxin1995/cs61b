@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.SET;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -23,8 +25,36 @@ public class SeparableEnemySolver {
      * Returns true if input is separable, false otherwise.
      */
     public boolean isSeparable() {
-        // TODO: Fix me
-        return false;
+
+        Set<String> group1=new HashSet<>();
+        Set<String> group2=new HashSet<>();
+
+        for(String node:g.labels()){
+            if(group1.contains(node)){
+                for(String neighbor:g.neighbors(node)){
+                    if(group1.contains(neighbor))
+                        return false;
+                    group2.add(neighbor);
+                }
+            }
+            else if(group2.contains(node)){
+                for(String neighbor:g.neighbors(node)){
+                    if(group2.contains(neighbor))
+                        return false;
+                    group1.add(neighbor);
+                }
+            }
+            else{
+                group1.add(node);
+                for(String neighbor:g.neighbors(node)){
+                    if(group1.contains(neighbor))
+                        return false;
+                    group2.add(neighbor);
+                }
+            }
+
+        }
+        return true;
     }
 
 
