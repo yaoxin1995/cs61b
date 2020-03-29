@@ -60,8 +60,7 @@ public class KDTree {
 
         if(cmp<=bestD)
             return true;
-        else
-            return false;
+        return false;
 
     }
 
