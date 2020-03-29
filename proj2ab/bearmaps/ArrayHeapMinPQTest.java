@@ -52,13 +52,13 @@ public class ArrayHeapMinPQTest {
         for(int i=0;i<=10;i++){
             test.add("check"+i,i);
         }
-        assertTrue(test.contains("check0"));
+        assertTrue(test.contains("check10"));
 
-        test.changePriority("check0",0);
+        test.changePriority("check10",0);
 
         String testS=test.removeSmallest();
 
-        assertEquals("check0",testS);
+        assertEquals("check10",testS);
     }
 
 
