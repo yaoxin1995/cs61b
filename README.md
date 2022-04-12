@@ -1,4 +1,4 @@
-# Git_cs61b
+# UC Berkeley CS 61b 
 
 The CS 61 series is an introduction to computer science, with particular emphasis on software and machines from a programmer’s point of view. CS 61A covered high-level approaches to problem-solving, providing you with a variety of ways to organize solutions to programming problems as compositions of functions, collections of objects, or sets of rules. In CS 61B, we move to a somewhat more detailed (and to some extent, more basic) level of programming.
 
